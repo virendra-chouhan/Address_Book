@@ -33,12 +33,17 @@ namespace addressbook
             do
             {
                 Console.WriteLine("\nPlease Enter Contact Details: \n");
+               
                 ContactDeatils();
-                Console.WriteLine("\nContact Created.\n");
+                
+                Console.WriteLine("\nContact Created.\n"); //store in contact
 
                 contact = firstName + " " + lastName + " " + phoneNumber.ToString() + " " + email + " " + address + " " + city + " " + state + " " + zipCode.ToString();
+                
                 addressBook.Add(contact);
                 count++;
+
+
 
                 Console.WriteLine("Do you want to continue: y/n");
                 ch = Convert.ToChar(Console.ReadLine());
